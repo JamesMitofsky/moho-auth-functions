@@ -7,11 +7,11 @@ const admin = require("firebase-admin");
 export const accountCreate = functions.auth.user().onCreate(async (user) => {
   await admin.initializeApp();
   const formattedUser = {
+    created: user.metadata.creationTime,
     email: user.email,
     name: user.displayName,
-    photoURL: user.photoURL,
     uid: user.uid,
-    created: user.metadata.creationTime,
+    photoURL: user.photoURL,
   };
 
   // create directory pointer
