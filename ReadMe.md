@@ -2,8 +2,8 @@
 
 Triggered by new user registrations, this function will create a new user in the Moho database, supporting two apps:
 
-- [Moho Access](https://moho-access.vercel.app)
-- [Moho Events](https://moho-events.vercel.app)
+- [Moho Access](https://github.com/JamesMitofsky/moho-access)
+- [Moho Events](https://github.com/JamesMitofsky/moho-events)
 
 ## Setup
 
